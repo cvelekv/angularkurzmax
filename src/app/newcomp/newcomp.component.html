@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)="displayIt()">Display Details</button>
+<p *ngIf="displayParagraph">Secret password - tuna</p>
+<div *ngFor="let array of array; let i = index" [ngClass]="{redClass: i>4}" [ngStyle]="{backgroundColor: i>4 ? 'blue' : 'white'}">{{array}}</div>
